@@ -2,7 +2,7 @@
 
 chdir(__DIR__.'/..');
 
-include '../vendor/autoload.php';
+include 'vendor/autoload.php';
 
 $container = include 'config/container.php';
 

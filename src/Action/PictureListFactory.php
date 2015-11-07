@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Action;
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Exception\ServiceNotCreatedException;
