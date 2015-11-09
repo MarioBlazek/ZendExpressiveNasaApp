@@ -2,7 +2,6 @@
 
 namespace App\Action;
 
-
 use AndrewCarterUK\APOD\APIInterface;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -49,7 +48,6 @@ class PictureListAction implements MiddlewareInterface
     {
         $page = intval($request->getAttribute('page')) ?: 0;
         $pictures = $this->apodApi->getPage($page, $this->resultsPerPage);
-
         $response->getBody()->write(json_encode($pictures));
 
         return $response

@@ -11,7 +11,7 @@ return [
         // An array of middleware to register prior to registration of the
         // routing middleware
         'pre_routing' => [
-            [ 'middleware' => App\Middleware\CacheMiddleware::class ],
+//            [ 'middleware' => App\Middleware\CacheMiddleware::class ],
         ],
 
         // An array of middleware to register after registration of the
